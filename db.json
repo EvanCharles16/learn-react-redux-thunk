@@ -1,0 +1,24 @@
+{
+  "siswa": [
+    {
+      "id": 3,
+      "nama": "elisa",
+      "kelas": 8
+    },
+    {
+      "nama": "budi",
+      "kelas": "2",
+      "id": 4
+    },
+    {
+      "nama": "Ferdinand",
+      "kelas": "3",
+      "id": 5
+    },
+    {
+      "nama": "Agnes",
+      "kelas": "5",
+      "id": 6
+    }
+  ]
+}
