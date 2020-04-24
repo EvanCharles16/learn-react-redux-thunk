@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 
 import { connect } from 'react-redux';
+import { Table } from 'react-bootstrap';
 
 import Item from './Item'
 import { getSiswa } from './../../actioncreators/siswa'
@@ -16,7 +17,7 @@ const Main = (props) => {
 
     return (
         <div>
-            <table border="1">
+            <Table striped bordered hover>
                 <thead>
                     <tr>
                         <th>Nama</th>
@@ -32,15 +33,16 @@ const Main = (props) => {
                         })
                     }
                 </tbody>
-            </table>
+            </Table>
         </div>
     )
 }
 
 
 const mapStateToProps = (state) => {
+
     return {
-        data : state.siswa
+        data : state.siswa.data
     }
 }
 

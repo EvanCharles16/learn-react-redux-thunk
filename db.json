@@ -19,6 +19,43 @@
       "nama": "Agnes",
       "kelas": "5",
       "id": 6
+    },
+    {
+      "nama": "baba",
+      "kelas": "1",
+      "id": 7
+    },
+    {
+      "nama": "sisi",
+      "kelas": "3",
+      "id": 8
+    },
+    {
+      "nama": "yoga",
+      "kelas": "34",
+      "id": 9
+    },
+    {
+      "nama": "megumin",
+      "kelas": "28",
+      "id": 11
+    }
+  ],
+  "guru": [
+    {
+      "nama": "will smith",
+      "jurusan": "tukang main film",
+      "id": 1
+    },
+    {
+      "nama": "macrosoft bindows",
+      "jurusan": "silikon volly",
+      "id": 2
+    },
+    {
+      "nama": "eruru",
+      "jurusan": "IT bisa update",
+      "id": 3
     }
   ]
 }

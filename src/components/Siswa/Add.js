@@ -1,17 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import {Button, Form, Modal} from 'react-bootstrap';
 
-import { sembunyikanTambahSiswa } from './../../actioncreators/aplikasi'
+import { sembunyikanTambahSiswa } from './../../actioncreators/siswa'
 import { tambahSiswa } from './../../actioncreators/siswa';
 const Add = (props) => {
-    const [data, setData ] = useState({
+    const initialState = {
         nama: '',
         kelas: ''
-    });
+    }
+    const [data, setData ] = useState(initialState);
 
     const handleClose = () => {
         props.sembunyikanTambahSiswa()
+        setData(initialState)
     }
 
     const handleChange = (event) => {
@@ -64,13 +66,13 @@ const Add = (props) => {
 
 const mapStateToProps = (state) => {
     return {
-        show: state.aplikasi.isShowAddSiswa
+        show: state.siswa.isShowAddSiswa
     }
 }
 
 const mapDispatchToProps = { 
-    sembunyikanTambahSiswa,
-    tambahSiswa
+    sembunyikanTambahSiswa : sembunyikanTambahSiswa,
+    tambahSiswa : tambahSiswa
  }
 
 export default connect(mapStateToProps, mapDispatchToProps )(Add);
